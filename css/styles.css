@@ -247,14 +247,15 @@ body {
     background-color: #404bbf;
   }
 
-  @media only screen and (min-resolution: 192dpi) and (min-width: 321px) {
-    .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Dark-bg-tab@2x.jpg");
-    }
-  }
+
   @media only screen and (min-width: 321px) {
     .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Dark-bg-tab.jpg");
+    }
+  }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 321px) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Dark-bg-tab@2x.jpg");
     }
   }
   @media only screen and (min-width:768px){

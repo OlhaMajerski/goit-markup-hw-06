@@ -204,7 +204,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 320px;
+    width: 100%;
     height: auto;
     padding: 72px 0;
     margin-left: auto;
@@ -247,18 +247,22 @@ body {
     background-color: #404bbf;
   }
 
-  @media only screen and (min-resolution: 192dpi) and (max-width: 767px){
+  @media only screen and (min-resolution: 192dpi) and (min-width: 321px) {
     .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Dark-bg-mob@2x.jpg");
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Dark-bg-tab@2x.jpg");
     }
   }
-
+  @media only screen and (min-width: 321px) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Dark-bg-tab.jpg");
+    }
+  }
   @media only screen and (min-width:768px){
     .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/dark-bg-tab.jpg");
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
       height: auto;
       padding: 112px 0;
-      max-width: 768px;
+    
     }
     .main-title {
       font-size: 56px;
@@ -271,14 +275,11 @@ body {
   }
   @media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
     .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Dark-bg-tab@2x.jpg");
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office\ 1@2x.jpg");
     }
   }
-
   @media only screen and (min-width: 1158px) {
     .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
-      max-width: 1440px;
       height: auto;
       padding: 188px 0;
     }
@@ -286,11 +287,8 @@ body {
       margin-bottom: 48px;
     }
   }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
-    .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office\ 1@2x.jpg");
-    }
-  }
+
+
 
   /* About section */
   .about {
